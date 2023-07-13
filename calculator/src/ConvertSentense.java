@@ -33,34 +33,6 @@ public class ConvertSentense {
             }
         }
         return sb.toString();
-        /*int[] numbers = new int[2];
-
-        StringBuilder sb = new StringBuilder();
-        if (number == 100) {
-            sb.append("C");
-        }
-        else {
-            for(int i = 0; number > 0; ++i) {
-                numbers[i] = number % 10;
-                number /= 10;
-            }
-            int dec = 0;
-            for(int j = 0; j < numbers.length; ++j) {
-                if (numbers[j] != 0) {
-                    for(int k = 0; k < units.length; ++k) {
-                        if (numbers[j] >= units[k]) {
-                            sb.append(letters[dec][k]);
-                            for(int l = 0; l < numbers[j] - units[k]; ++l) {
-                                sb.append(letters[dec][3]);
-                            }
-                            break;
-                        }
-                    }
-                }
-                ++dec;
-            }
-        }
-        return sb.toString();*/
     }
     public static Sentense convert(Sentense sentense){
         sentense.x = fromRomanToArabic(sentense.x);
